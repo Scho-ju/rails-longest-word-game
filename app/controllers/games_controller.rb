@@ -14,9 +14,9 @@ class GamesController < ApplicationController
     @outcome = ''
     if @valid_letters
       if @valid_word
-        @outcome = "Congratulations, #{@guess} is a valid enlish word"
+        @outcome = "Congratulations, #{@guess} is a valid english word"
       else
-        @outcome = "#{@guess} is no english word"
+        @outcome = "#{@guess} is not an english word"
       end
     else
       @outcome = "#{@guess} can't be build out of #{@grid}"

@@ -1,4 +1,7 @@
-<h3><%= @grid %></h3>
+
+<% @grid.each do |letter| %>
+  <button type="button" class="btn btn-primary btn-lg"><%= letter %></button>
+<% end %>
 
 <form action="/score" method="get">
   <input type="text" name="word" placeholder="What's your word?">
